@@ -124,7 +124,7 @@ namespace SolarSCADA
                     send_date();
                     req_date = DateTime.Now.DayOfYear;
                 }
-                if (Math.Abs(DateTime.Now.Hour* 60*60 +DateTime.Now.Minute*60+DateTime.Now.Second - req_data) >= 10.0)
+                if (Math.Abs(DateTime.Now.Hour* 60*60 +DateTime.Now.Minute*60+DateTime.Now.Second - req_data) >= 10)
                 {
                     request_data();
                     req_data = DateTime.Now.Hour * 60 * 60 + DateTime.Now.Minute * 60 + DateTime.Now.Second;
